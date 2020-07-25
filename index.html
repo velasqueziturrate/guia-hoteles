@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
   <title>Home Guia de Hoteles</title>
 </head>
 
@@ -15,40 +16,161 @@
     <h1>Guia de Hoteles</h1>
   </div>
   <div class="container">
-    <div class="row align-items-center">
-      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col align-self-start">
-        <h3>Eurobuilding</h3>
-        <p>El mas lujoso</p>
+
+    <!-- Con Flex -->
+    <div class="d-flex flex-wrap">
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col ">
+        <h3>Goza</h3>
+        <p>Goza de tu estadia.</p>
       </div>
-      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col align-self-center">
-        <h3>Hilton</h3>
-        <p>El mas comercial</p>
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col ">
+        <h3>Disfruta</h3>
+        <p>Disfruta de nuestras areas recreativas.</p>
       </div>
-      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col align-self-end">
-        <h3>Marriot</h3>
-        <p>El mas elegante</p>
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col ">
+        <h3>Aprende</h3>
+        <p>Aprende de nuestra historia.</p>
+      </div>
+    </div>
+    <br>
+    <div class="d-flex flex-wrap flex-row-reverse">
+      <div class="card-hotel d-flex flex-column justify-content-between">
+        <div class="">
+          <h5>Eurobuilding</h5>
+          <p>El mas lujoso</p>
+        </div>
+        <div class="">
+          <button type="button" class="btn btn-primary btn-reserva">Reserva ya</button>
+        </div>
+      </div>
+      <div class="card-hotel d-flex flex-column justify-content-between">
+        <div>
+          <h5>Hilton</h5>
+          <p>El mas comercial</p>
+        </div>
+        <div class="">
+          <button type="button" class="btn btn-primary btn-reserva">Reserva ya</button>
+        </div>
+      </div>
+      <div class="card-hotel d-flex flex-column justify-content-between">
+        <div>
+          <h5>Marriot</h5>
+          <p>El mas elegante</p>
+        </div>
+        <div class="">
+          <button type="button" class="btn btn-primary btn-reserva">Reserva ya</button>
+        </div>
+      </div>
+      <div class="card-hotel d-flex flex-column justify-content-between">
+        <div>
+          <h5>Holidays In</h5>
+          <p>El mas economico</p>
+        </div>
+        <div class="">
+          <button type="button" class="btn btn-primary btn-reserva">Reserva ya</button>
+        </div>
+      </div>
+      <div class="card-hotel d-flex flex-column justify-content-between">
+        <div>
+          <h5>California Suites</h5>
+          <p>Estaciona en tu habitacion.</p>
+        </div>
+        <div class="">
+          <button type="button" class="btn btn-primary btn-reserva">Reserva ya</button>
+        </div>
+      </div>
+      <div class="card-hotel d-flex flex-column justify-content-between">
+        <div>
+          <h5>Aladdin</h5>
+          <p>Una experiencia afrodisiaca.</p>
+        </div>
+        <div class="">
+          <button type="button" class="btn btn-primary btn-reserva">Reserva ya</button>
+        </div>
+      </div>
+      <div class="card-hotel d-flex flex-column justify-content-between">
+        <div>
+          <h5>Hotel Piamonte</h5>
+          <p>Siente la agia italiana.</p>
+        </div>
+        <div class="">
+          <button type="button" class="btn btn-primary btn-reserva">Reserva ya</button>
+        </div>
+      </div>
+      <div class="card-hotel d-flex flex-column justify-content-between">
+        <div>
+          <h5>Dallas Suites</h5>
+          <p>Todo un rodeo.</p>
+        </div>
+        <div class="">
+          <button type="button" class="btn btn-primary btn-reserva">Reserva ya</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Con Grillas -->
+    <!-- <div class="row align-items-center">
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col ">
+        <h3>Goza</h3>
+        <p>Goza de tu estadia.</p>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col ">
+        <h3>Disfruta</h3>
+        <p>Disfruta de nuestras areas recreativas.</p>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col ">
+        <h3>Aprende</h3>
+        <p>Aprende de nuestra historia.</p>
       </div>
     </div>
     <br>
     <div class="row align-items-center">
-      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col align-self-end">
-        <h5>Goza</h5>
-        <p>Goza de tu estadia.</p>
-        <button type="button" class="btn btn-primary">Llama ya</button>
+      <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col ">
+        <h5>Eurobuilding</h5>
+        <p>El mas lujoso</p>
+        <button type="button" class="btn btn-primary">Reserva ya</button>
       </div>
-      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col align-self-end">
-        <h5>Disfruta</h5>
-        <p>Disfruta de nuestras areas recreativas.</p>
-        <button type="button" class="btn btn-primary">Llama ya</button>
+      <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col ">
+        <h5>Hilton</h5>
+        <p>El mas comercial</p>
+        <button type="button" class="btn btn-primary">Reserva ya</button>
       </div>
-      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col align-self-end">
-        <h5>Aprende</h5>
-        <p>Aprende de nuestra hitoria.</p>
-        <button type="button" class="btn btn-primary">Llama ya</button>
+      <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col ">
+        <h5>Marriot</h5>
+        <p>El mas elegante</p>
+        <button type="button" class="btn btn-primary">Reserva ya</button>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col ">
+        <h5>Holidays In</h5>
+        <p>El mas economico</p>
+        <button type="button" class="btn btn-primary">Reserva ya</button>
+      </div>
+    </div> -->
+  </div>
+  <footer>
+    <div class="row">
+      <div class="col-sm-4 d-flex flex-column align-items-start">
+        <a href="https://twitter.com">Twitter</a>
+        <a href="https://www.facebook.com">Facebook</a>
+        <a href="https://www.instagram.com">Instagram</a>
+        <a href="https://www.google.com">Google</a>
+      </div>
+      <div class="col-sm-4">
+        <address>
+          <h3>Oficina Central</h3>
+          <p>Caracas 1073, Miranda, Argentina</p>
+          <p>+584141400496</p>
+          <p>velasqueziturrate@gmail.com</p>
+        </address>
+      </div>
+      <div class="col-sm-4 d-flex flex-column align-items-end">
+        <a href="https://twitter.com">Nosotros</a>
+        <a href="https://www.facebook.com">Precios</a>
+        <a href="https://www.instagram.com">Terminos y Condiciones</a>
+        <a href="https://www.google.com">Contacto</a>
       </div>
     </div>
-  </div>
-  </div>
+  </footer>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="node_modules/jquery/dist/jquery.min.js"></script>
