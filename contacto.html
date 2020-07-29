@@ -19,10 +19,10 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
-        <li class="nav-item active"><a class="nav-link" href="#">Nosotros</a></li>
+        <li class="nav-item active"><a class="nav-link" href="./about.html">Nosotros</a></li>
         <li class="nav-item"><a class="nav-link" href="#">Precios</a></li>
         <li class="nav-item"><a class="nav-link" href="#">Terminos y Condiciones</a></li>
-        <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
       </ul>
     </div>
     
@@ -34,12 +34,53 @@
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Nosotros</li>
+        <li class="breadcrumb-item active" aria-current="page">Contacto</li>
       </ol>
     </nav>
-    <span>
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus voluptatem repellat minima, obcaecati consequatur temporibus deleniti rem perspiciatis unde molestiae a. Quia alias culpa quidem ullam sequi nam minima perspiciatis?
-    </span>
+    <h1>Dejame tu comentario</h1>
+    <form>
+      <div class="form-row">
+        <div class="form-group col-sm-6">
+          <label for="nombre">Nombre</label>
+          <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
+        </div>
+        <div class="form-group col-sm-6">
+          <label for="apellido">Apellido</label>
+          <input type="text" class="form-control" id="apellido" placeholder="Ingrese su apellido">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" id="email" placeholder="Ingrese su email">
+      </div>
+      <div class="form-row">
+        <div class="form-group col-sm-9">
+          <label for="domicilio">Dimicilio</label>
+          <input type="text" class="form-control" id="domicilio" placeholder="Ingrese su domicilio">
+        </div>
+        <div class="form-group col-sm-3">
+          <label for="provincia">Provincia</label>
+          <select name="" id="provincia" class="form-control">
+            <option value="" selected>Miranda</option>
+            <option value="">Distrito Capital</option>
+            <option value="">Carabobo</option>
+            <option value="">Zulia</option>
+            <option value="">Nueva Esparta</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="comentario">Comentario</label>
+        <textarea name="" id="comentario" class="form-control" cols="30" rows="10"></textarea>
+      </div>
+      <div class="form-group">
+        <div class="form-check">        
+          <input class="form-check-input" type="checkbox" name="" id="gridCheck">
+          <label class="form-check-label" for="gridCheck">Quiero que me contacten</label>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
   </div>
   <footer>
     <div class="row">
