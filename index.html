@@ -93,7 +93,7 @@
           <p class="card-text">El mas lujoso</p>
         </div>
         <div>
-          <button type="button" class="btn btn-primary btn-reserva"><span class="oi oi-plus"></span> Reserva ya</button>
+          <button type="button" class="btn btn-primary btn-reserva" data-toggle="popover" title="Promociones" data-content="Consulta las promociones vigentes"><span class="oi oi-plus"></span> Reserva ya</button>
         </div>
       </div>
       <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
@@ -299,6 +299,7 @@
   <script>
     $(function(){
       $("[data-toggle='tooltip']").tooltip();
+      $("[data-toggle='popover']").popover();
     });
   </script>
 </body>
