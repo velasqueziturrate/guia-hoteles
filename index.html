@@ -117,7 +117,7 @@
           <img class="card-img-top" src="./images/hotel.jpg" alt="hotel img">
           <p class="card-text">El mas lujoso</p>
           <!-- Boton de Modal -->
-          <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">
+          <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto" id="contactoBtn">
             Contacto
           </button>
         </div>
@@ -156,7 +156,7 @@
           <img class="card-img-top" src="./images/hotel.jpg" alt="hotel img">
           <p class="card-text">El mas elegante</p>
           <!-- Boton de Modal -->
-          <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">
+          <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto" id="contactoBtn">
             Contacto
           </button>
         </div>
@@ -176,7 +176,7 @@
           <img class="card-img-top" src="./images/hotel.jpg" alt="hotel img">
           <p class="card-text">El mas economico</p>
           <!-- Boton de Modal -->
-          <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">
+          <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto" id="contactoBtn">
             Contacto
           </button>
         </div>
@@ -196,7 +196,7 @@
           <img class="card-img-top" src="./images/hotel.jpg" alt="hotel img">
           <p class="card-text">Estaciona en tu habitacion.</p>
           <!-- Boton de Modal -->
-          <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">
+          <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto" id="contactoBtn">
             Contacto
           </button>
         </div>
@@ -216,7 +216,7 @@
           <img class="card-img-top" src="./images/hotel.jpg" alt="hotel img">
           <p class="card-text">Una experiencia afrodisiaca.</p>
           <!-- Boton de Modal -->
-          <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">
+          <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto" id="contactoBtn">
             Contacto
           </button>
         </div>
@@ -236,7 +236,7 @@
           <img class="card-img-top" src="./images/hotel.jpg" alt="hotel img">
           <p class="card-text">Siente la magia italiana.</p>
           <!-- Boton de Modal -->
-          <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">
+          <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto" id="contactoBtn">
             Contacto
           </button>
         </div>
@@ -256,7 +256,7 @@
           <img class="card-img-top" src="./images/hotel.jpg" alt="hotel img">
           <p class="card-text">Todo un rodeo.</p>
           <!-- Boton de Modal -->
-          <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">
+          <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto" id="contactoBtn">
             Contacto
           </button>
         </div>
@@ -372,13 +372,31 @@
         interval: 2000
       });
 
+      //jQuery
       $('#contacto').on('show.bs.modal', function(e){
         console.log('El modal contacto se esta mostrando');
+        //Remover una clase y adherirle otra al hacer clic (sucede solo una vez)
+        // $('#contactoBtn').removeClass('btn-outline-success');
+        // $('#contactoBtn').addClass('btn-primary');
+        //Bloquear al entrar al modal
+        $('#contactoBtn').prop('disabled', true);
       })
 
-      // $('#contactoBtn').on('shown.bs.modal', function(e){
-      //    console.log('El modal se esta mostrando');
-      //  });
+       $('#contacto').on('shown.bs.modal', function(e){
+          console.log('El modal se mostro');
+        });
+
+        $('#contacto').on('hide.bs.modal', function(e){
+        console.log('El modal contacto se esta ocultando');
+      })
+
+       $('#contacto').on('hidden.bs.modal', function(e){
+          console.log('El modal se oculto');
+          //Desbloquear al salir del modal
+          $('#contactoBtn').prop('disabled', false);
+        });
+
+
     });
   </script>
 </body>
