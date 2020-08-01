@@ -122,8 +122,7 @@
           </button>
         </div>
         <div>
-          <button type="button" class="btn btn-primary btn-reserva" data-toggle="popover" title="Promociones"
-            data-content="Consulta las promociones vigentes"><span class="oi oi-plus"></span> Reserva ya</button>
+          <button type="button" class="btn btn-primary btn-reserva" data-toggle="popover" data-placement="bottom" title="Promociones" data-content="Consulta las promociones vigentes"><span class="oi oi-plus"></span> Reserva ya</button>
         </div>
       </div>
       <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
@@ -137,12 +136,12 @@
           <img class="card-img-top" src="./images/hotel.jpg" alt="hotel img">
           <p class="card-text">El mas comercial</p>
           <!-- Boton de Modal -->
-          <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">
+          <button type="button" class="btn btn-outline-success" data-toggle="modal" data-placement="bottom"  data-target="#contacto">
             Contacto
           </button>
         </div>
         <div>
-          <button type="button" class="btn btn-primary btn-reserva" data-toggle="popover" title="Promociones"
+          <button type="button" class="btn btn-primary btn-reserva" data-toggle="popover" data-placement="bottom"  title="Promociones"
             data-content="Consulta las promociones vigentes"><span class="oi oi-plus"></span> Reserva ya</button>
         </div>
       </div>
@@ -162,7 +161,7 @@
           </button>
         </div>
         <div>
-          <button type="button" class="btn btn-primary btn-reserva" data-toggle="popover" title="Promociones"
+          <button type="button" class="btn btn-primary btn-reserva" data-toggle="popover" data-placement="bottom"  title="Promociones"
             data-content="Consulta las promociones vigentes"><span class="oi oi-plus"></span> Reserva ya</button>
         </div>
       </div>
@@ -182,7 +181,7 @@
           </button>
         </div>
         <div>
-          <button type="button" class="btn btn-primary btn-reserva" data-toggle="popover" title="Promociones"
+          <button type="button" class="btn btn-primary btn-reserva" data-toggle="popover" data-placement="bottom"  title="Promociones"
             data-content="Consulta las promociones vigentes"><span class="oi oi-plus"></span> Reserva ya</button>
         </div>
       </div>
@@ -202,7 +201,7 @@
           </button>
         </div>
         <div>
-          <button type="button" class="btn btn-primary btn-reserva" data-toggle="popover" title="Promociones"
+          <button type="button" class="btn btn-primary btn-reserva" data-toggle="popover" data-placement="bottom"  title="Promociones"
             data-content="Consulta las promociones vigentes"><span class="oi oi-plus"></span> Reserva ya</button>
         </div>
       </div>
@@ -222,7 +221,7 @@
           </button>
         </div>
         <div>
-          <button type="button" class="btn btn-primary btn-reserva" data-toggle="popover" title="Promociones"
+          <button type="button" class="btn btn-primary btn-reserva" data-toggle="popover" data-placement="bottom"  title="Promociones"
             data-content="Consulta las promociones vigentes"><span class="oi oi-plus"></span> Reserva ya</button>
         </div>
       </div>
@@ -242,7 +241,7 @@
           </button>
         </div>
         <div>
-          <button type="button" class="btn btn-primary btn-reserva" data-toggle="popover" title="Promociones"
+          <button type="button" class="btn btn-primary btn-reserva" data-toggle="popover" data-placement="bottom"  title="Promociones"
             data-content="Consulta las promociones vigentes"><span class="oi oi-plus"></span> Reserva ya</button>
         </div>
       </div>
@@ -262,7 +261,7 @@
           </button>
         </div>
         <div>
-          <button type="button" class="btn btn-primary btn-reserva" data-toggle="popover" title="Promociones"
+          <button type="button" class="btn btn-primary btn-reserva" data-toggle="popover" data-placement="bottom"  title="Promociones"
             data-content="Consulta las promociones vigentes"><span class="oi oi-plus"></span> Reserva ya</button>
         </div>
       </div>
@@ -364,11 +363,11 @@
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="node_modules/jquery/dist/jquery.min.js"></script>
   <script src="node_modules/popper.js/dist/popper.min.js"></script>
-  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>\
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   <script>
     $(function () {
       $("[data-toggle='tooltip']").tooltip();
-      $("[data-toggle='popover']").popover();
+      $('[data-toggle="popover"]').popover(); 
       $('.carousel').carousel({
         interval: 2000
       });
